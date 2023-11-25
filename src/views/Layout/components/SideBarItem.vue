@@ -7,6 +7,8 @@ const props = defineProps({
     default:() => ({})
   }
 })
+
+// console.log(props.item,'item')
 //组件挂载到节点上之前执行的函数
 onBeforeMount(() => {
 })
@@ -39,15 +41,16 @@ onUnmounted(() => {
       <el-sub-menu :index="props.item.name">
         <template #title>
           <el-icon><icon-menu /></el-icon>
-          <span>{{props.item.meta.title}}}</span>
+          <span>{{props.item.meta.title}}</span>
         </template>
-        <SideBarItem v-for="child in props.item.chidren" :key="child.path" :item="child"></SideBarItem>
+        {{props.item.chidren}}
+        <SideBarItem v-for="child in props.item.children" :key="child.path" :item="child"></SideBarItem>
       </el-sub-menu>
     </div>
     <div v-else-if="props.item.component">
       <el-menu-item :index="props.item.path">
         <el-icon><icon-menu/></el-icon>
-        <span>{{item.meta.title}}</span>
+        <span>{{props.item.meta.title}}</span>
       </el-menu-item>
 
     </div>

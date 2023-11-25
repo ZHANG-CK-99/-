@@ -4,7 +4,7 @@ import { defineStore } from 'pinia'
 export const useUserRole = defineStore('uerRoles',  {
   state: () =>{
       return {
-        roles:['A','B','C'],
+        roles:['A','B','C','D'],
         routes:[]
       }
   },

@@ -29,13 +29,25 @@ const System  =   {
         },
         {
             path:'/menuManage',
-            name:'menuManage',
+            name:'MenuManage',
             component:() => import('@/views/menuManage/index.vue'),
             meta:{
                 title:'菜单管理',
                 affix: true,
                 power:'C'
-            }
+            },
+            children:[
+                {
+                    path:'/menuManage/rolesManage',
+                    name:'RolesManage',
+                    component:() => import('@/views/RolesManage/index.vue'),
+                    meta:{
+                        title:'权限管理',
+                        affix: true,
+                        power:'D'
+                    }
+                },
+            ]
         }
     ]
 }
