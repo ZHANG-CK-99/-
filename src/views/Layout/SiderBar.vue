@@ -76,21 +76,12 @@ onUnmounted(() => {
         text-color="#fff"
     >
       <SideBarItem v-for="item in myRoutes" :item="item"></SideBarItem>
-<!--      <el-menu-item index="/dashboard">-->
-<!--        <el-icon><icon-menu /></el-icon>-->
-<!--        <span>dashboard</span>-->
-<!--      </el-menu-item>-->
-<!--      <el-menu-item index="/userManage">-->
-<!--        <el-icon><icon-menu /></el-icon>-->
-<!--        <span>userManage</span>-->
-<!--      </el-menu-item>-->
-<!--      <el-menu-item index="3" disabled>-->
-<!--        <el-icon><document /></el-icon>-->
-<!--        <span>Navigator Three</span>-->
-<!--      </el-menu-item>-->
-
     </el-menu>
+
   </div>
 </template>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+
+
+</style>

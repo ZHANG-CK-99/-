@@ -37,6 +37,10 @@ onUnmounted(() => {
     <div class="main-view">
       <div class="main-left">
         <sider-bar></sider-bar>
+
+        <div class="bottom-view">
+          <div class="spaceInfo">空间容量信息</div>
+        </div>
       </div>
       <div class="main-right">
         <MainContet></MainContet>
@@ -59,9 +63,24 @@ onUnmounted(() => {
       display: flex;
       box-sizing: border-box;
       .main-left{
+        position: relative;
         width: 300px;
         height: calc(100vh - 60px);
         background: #282828;
+
+        .bottom-view{
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          //width: 100%;
+          height: 40px;
+          background-color: #282828;
+          display: flex;
+          .spaceInfo{
+            font-size: 12px;
+            color: #fff;
+          }
+        }
       }
       .main-right{
         width: calc(100% - 300px);

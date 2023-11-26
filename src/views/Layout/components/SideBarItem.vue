@@ -52,20 +52,8 @@ onUnmounted(() => {
         <el-icon><icon-menu/></el-icon>
         <span>{{props.item.meta.title}}</span>
       </el-menu-item>
-
     </div>
-<!--    <el-menu-item index="/dashboard">-->
-<!--      <el-icon><icon-menu /></el-icon>-->
-<!--      <span>面板页</span>-->
-<!--    </el-menu-item>-->
-<!--    <el-menu-item index="/userManage">-->
-<!--      <el-icon><icon-menu /></el-icon>-->
-<!--      <span>用户管理</span>-->
-<!--    </el-menu-item>-->
-<!--    <el-menu-item index="3" disabled>-->
-<!--      <el-icon><document /></el-icon>-->
-<!--      <span>Navigator Three</span>-->
-<!--    </el-menu-item>-->
+
   </div>
 </template>
 
